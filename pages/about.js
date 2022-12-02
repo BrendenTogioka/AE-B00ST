@@ -13,7 +13,7 @@ export default function About() {
 
       <div className={styles.aboutSection}>
         <div className={styles.aboutVideo}>
-          <video width="100%" height="100%" autoPlay loop muted>
+          <video width="100%" height="100%" autoPlay loop muted playsInline>
             <source
               src={require("../public/assets/Dot_Sphere.mp4")}
               type="video/mp4"

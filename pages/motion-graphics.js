@@ -23,7 +23,14 @@ export default function MotionGraphics() {
             <div className={styles.feature} key={id}>
               <h3 className={styles.featureTitle}>{title}</h3>
               <div className={styles.featureVideo}>
-                <video width="100%" height="100%" autoPlay loop muted>
+                <video
+                  width="100%"
+                  height="100%"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                >
                   <source src={src} type="video/mp4" />
                 </video>
               </div>
