@@ -1,0 +1,46 @@
+.banner {
+  min-height: 86vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #121212;
+  background-image: url("../public/assets/BG.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+}
+
+.banner h1 {
+  font-size: 4rem;
+  max-width: 700px;
+}
+
+.ctaForm input,
+.ctaForm button,
+.ctaForm textarea {
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  font-family: inherit;
+}
+
+.ctaForm input {
+  margin-bottom: 1rem;
+}
+
+.ctaForm button {
+  border-color: #d51aa9;
+  background: #d51aa9;
+  background: linear-gradient(93.51deg, #d51aa9 -3.22%, #e2523b 100.62%);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1rem;
+  margin-top: 1rem;
+}

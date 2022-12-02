@@ -1,0 +1,104 @@
+.banner {
+  min-height: 86vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #121212;
+  background-image: url("../public/assets/BG.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  max-width: 700px;
+}
+
+.aboutSection {
+  text-align: center;
+}
+
+.aboutVideo {
+  /* width: 50%; */
+}
+.aboutContent {
+  margin-bottom: 3rem;
+}
+
+.ctaSection {
+  background: #121212;
+  padding: 4rem 2rem;
+  background-image: url("../public/assets/Cta_Bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ctaContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ctaContent {
+  text-align: center;
+}
+
+.ctaSection h2 {
+  font-size: 2rem;
+}
+
+.ctaSection p {
+  font-size: 1.2rem;
+  margin: 1rem auto 2rem;
+  line-height: 1.6;
+}
+
+.ctaForm input,
+.ctaForm button {
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+}
+
+.ctaForm input {
+}
+
+.ctaForm button {
+  border-color: #d51aa9;
+  background: #d51aa9;
+  background: linear-gradient(93.51deg, #d51aa9 -3.22%, #e2523b 100.62%);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .homeBanner h1 {
+    font-size: 4rem;
+    max-width: 700px;
+  }
+
+  .ctaSection h2 {
+    font-size: 3rem;
+  }
+
+  .aboutSection {
+    display: flex;
+    height: auto;
+  }
+  .aboutContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+}
