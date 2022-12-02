@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useRouter } from "next/router";
+
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../public/assets/logo.png";
@@ -6,6 +8,7 @@ import styles from "../styles/Header.module.css";
 
 export default function Header() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const router = useRouter();
 
   return (
     <>
@@ -45,16 +48,32 @@ export default function Header() {
             }
           >
             <ul className={styles.navList}>
-              <li>
+              <li
+                onClick={() => {
+                  setIsNavExpanded(false);
+                }}
+              >
                 <Link href="/motion-graphics">Motion Graphics</Link>
               </li>
-              <li>
+              <li
+                onClick={() => {
+                  setIsNavExpanded(false);
+                }}
+              >
                 <Link href="/typography">Typography</Link>
               </li>
-              <li>
+              <li
+                onClick={() => {
+                  setIsNavExpanded(false);
+                }}
+              >
                 <Link href="/about">About</Link>
               </li>
-              <li>
+              <li
+                onClick={() => {
+                  setIsNavExpanded(false);
+                }}
+              >
                 <Link href="/contact">Contact</Link>
               </li>
             </ul>
